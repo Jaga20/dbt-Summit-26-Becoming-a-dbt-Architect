@@ -12,11 +12,11 @@ final as (
         ordered_at,
         customer_name,
         location_name,
-        tax_rate,
+        tax_rate::number,
         location_opened_at,
-        date_part(month, ordered_at) as ordered_month,
-        date_part(day, ordered_at) as ordered_day, 
-        date_part(year, ordered_at) as ordered_year
+        date_part(month, ordered_at)::number as ordered_moth,
+        date_part(day, ordered_at)::number as ordered_day, 
+        date_part(year, ordered_at)::number as ordered_year
     from orders
 )
 
