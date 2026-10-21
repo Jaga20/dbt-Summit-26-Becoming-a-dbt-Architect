@@ -12,7 +12,7 @@ final as (
         ordered_at,
         customer_name,
         location_name,
-        tax_rate,
+        tax_rate::number(38,6) as tax_rate,
         location_opened_at,
         date_part(month, ordered_at) as ordered_month,
         date_part(day, ordered_at) as ordered_day, 
