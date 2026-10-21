@@ -1,3 +1,9 @@
+{{
+    config(
+        group = "finance"
+    )
+}}
+
 with orders as (
     select * from {{ ref('int_orders') }}
 ),
