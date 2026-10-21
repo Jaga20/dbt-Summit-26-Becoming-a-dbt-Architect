@@ -1,3 +1,9 @@
+{{
+    config(
+        group = "product",
+        access="protected"
+    )
+}}
 with
 
 source as (
